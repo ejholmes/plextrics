@@ -10,7 +10,7 @@ module Plextrics
       raise 'Not implemented'
     end
 
-    def guage(metric, value)
+    def gauge(metric, value)
       raise 'Not implemented'
     end
   end
