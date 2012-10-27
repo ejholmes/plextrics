@@ -7,8 +7,9 @@ module Plextrics
     end
 
     post '/:service' do
+      events = Payload.parse(request.env['rack.input'].read)
       service = "Plextrics::Service::#{params[:service].capitalize}".constantize.new(params)
-      payload = Payload.parse(request.env['rack.input'].read)
+      Service.log(events)
     end
   end
 end

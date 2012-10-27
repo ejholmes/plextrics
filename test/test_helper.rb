@@ -9,7 +9,7 @@ WebMock.disable_net_connect!
 require 'plextrics'
 
 class Plextrics::Service::TestCase < Test::Unit::TestCase
-  include WebMock
+  include WebMock::API
 
   def service(klass, params)
     service = klass.new(params)

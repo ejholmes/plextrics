@@ -7,8 +7,8 @@ module Plextrics
       @ezkey = params[:ezkey]
     end
 
-    def count(metric, count=1)
-      ::StatHat::API.ez_post_count(metric, @ezkey, count)
+    def count(metric)
+      ::StatHat::API.ez_post_count(metric, @ezkey, 1)
     end
 
     def gauge(metric, value)
