@@ -1,3 +1,3 @@
-require 'plextrics'
+require File.expand_path('../config/environment', __FILE__)
 
-run Plextrics.app
+run App.app

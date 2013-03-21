@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in plextrics.gemspec
-gemspec
+gem 'grape'
+gem 'faraday'
+gem 'activesupport'
