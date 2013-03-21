@@ -9,6 +9,8 @@ GEM
     descendants_tracker (0.0.1)
     faraday (0.8.6)
       multipart-post (~> 1.1)
+    foreman (0.62.0)
+      thor (>= 0.13.6)
     grape (0.4.0)
       activesupport
       builder
@@ -24,11 +26,14 @@ GEM
     multi_json (1.7.0)
     multi_xml (0.5.3)
     multipart-post (1.2.0)
+    puma (1.6.3)
+      rack (~> 1.2)
     rack (1.5.2)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
+    thor (0.17.0)
     virtus (0.5.4)
       backports (~> 2.6.1)
       descendants_tracker (~> 0.0.1)
@@ -39,4 +44,6 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   faraday
+  foreman
   grape
+  puma
